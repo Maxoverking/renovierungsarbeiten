@@ -1,0 +1,12 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --main-text-color: #242524;
+  --red: rgb(253, 111, 106);
+  --blue: #2993d9;
+  --seasalt: #f9f9f9;
+  --yellow: #ffe45e;
+  --b-radius: 0.25rem;
+  --stastistics: #12e0ac;
+  --icons-social-hover: #f35d0d;
+  --cards-bg: #eceaea;
+}
