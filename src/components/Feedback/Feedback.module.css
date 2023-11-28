@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+.feedback_background {
+  padding: 1.5rem 0rem;
+  margin: 3rem 0rem;
+  background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(196deg 79% 96%) 10%,
+    hsl(197deg 84% 93%) 20%,
+    hsl(198deg 82% 89%) 30%,
+    hsl(198deg 84% 85%) 40%,
+    hsl(198deg 83% 82%) 50%,
+    hsl(198deg 84% 85%) 60%,
+    hsl(198deg 82% 89%) 70%,
+    hsl(197deg 84% 93%) 80%,
+    hsl(196deg 79% 96%) 90%,
+    hsl(0deg 0% 100%) 100%
+  );
+}
+.feedbackHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedbackHeaderImg {
+  width: 4rem;
+}
+
+.feedbackHeaderText {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.reviewsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.reviewContainer {
+  width: 90%;
+}
+
+.reviewName {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Cormorant-Regular", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* color: var(--white); */
+}
+
+.reviewBody {
+  width: 85%;
+  margin: 10px auto 30px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-family: "Cormorant-Regular";
+  text-indent: 1rem;
+  text-align: justify;
+  word-wrap: break-word;
+  /* color: var(--white); */
+}
+
+.reviewButton {
+  padding: 0.6rem 1.4rem;
+  background-color: var(--blue);
+  margin-top: 1rem;
+  color: var(--white);
+  border-radius: 1.4rem;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+  font-size: 1.3rem;
+  box-shadow: 1px 1px 4px rgba(223, 127, 127, 0.3);
+}
+
+.reviewButton:hover {
+  background-color: rgb(13, 171, 171);
+  color: var(--black);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
+}
