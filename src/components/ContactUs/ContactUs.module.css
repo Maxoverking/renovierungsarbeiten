@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Black&display=swap");
+
+.contacts_form {
+  width: 80%;
+}
+
+.form_control{
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+.contacts_input_div {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.questionTextInput{
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+.contacts_info {
+  color: #c74817;
+  font-size: 1rem;
+  margin: -1rem 0 1rem;
+  text-align: center;
+}
+
+.contacts_info_charLeft {
+  color: #c74817;
+  font-size: 0.8rem;
+  margin: -1rem 1rem 1rem;
+}
+
+.contacts_info_charLeft span {
+  font-weight: 900;
+}
+
+.askText {
+  font-family: "Actor", sans-serif;
+  font-size: 2rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
