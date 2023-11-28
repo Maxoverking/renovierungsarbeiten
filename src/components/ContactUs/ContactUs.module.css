@@ -49,3 +49,20 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
+
+.requestButton {
+  padding: 0.6rem 1.4rem;
+  background-color: var(--blue);
+  margin-top: 1rem;
+  color: var(--white);
+  border-radius: 1.4rem;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+  font-size: 1.3rem;
+  box-shadow: 1px 1px 4px rgba(223, 127, 127, 0.3);
+}
+
+.requestButton:hover {
+  background-color: rgb(13, 171, 171);
+  color: var(--black);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
+}

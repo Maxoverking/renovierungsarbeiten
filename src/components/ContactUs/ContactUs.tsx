@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import InputMask from "react-input-mask";
-import styles from "./ContactUs.module.css";
+import css from "./ContactUs.module.css";
 import { initContacUsForm } from "./interfaces/IContactUsForm";
 import { Container, TextField } from "@mui/material";
 import sendMessageToTelegram from "../../services/Notice/sendMessageToTelegram";
@@ -46,12 +46,12 @@ export default function Contacts(): JSX.Element {
 
   return (
     <>
-      <div className={styles.contacts_main}>
+      <div className={css.contacts_main}>
         <h4>Haben Sie eine Frage an uns?</h4>
         <Container>
           <h4>Rückmeldeformular:</h4>
-          <form className={styles.contacts_form} onSubmit={handleCreateRequest}>
-            <div className={styles.contacts_input_div}>
+          <form className={css.contacts_form} onSubmit={handleCreateRequest}>
+            <div className={css.contacts_input_div}>
               <TextField
                 className="form-control"
                 label="Vorname"
@@ -64,7 +64,7 @@ export default function Contacts(): JSX.Element {
                 required
               />
             </div>
-            <div className={styles.contacts_input_div}>
+            <div className={css.contacts_input_div}>
               <TextField
                 className="form-control"
                 label="Name"
@@ -77,7 +77,7 @@ export default function Contacts(): JSX.Element {
                 required
               />
             </div>
-            <div className={styles.contacts_input_div}>
+            <div className={css.contacts_input_div}>
               <TextField
                 className="form-control"
                 label="E-Mail"
@@ -90,10 +90,10 @@ export default function Contacts(): JSX.Element {
                 required
               />
             </div>
-            <div className={styles.contacts_input_div}>
+            <div className={css.contacts_input_div}>
               <InputMask
                 mask="+4 9(999) 999-9999"
-                className={styles.form_control}
+                className={css.form_control}
                 type="tel"
                 placeholder="+4 9(___) ___-____"
                 name="phoneNumber"
@@ -101,12 +101,12 @@ export default function Contacts(): JSX.Element {
                 onChange={collectAboutUsData}
               />
             </div>
-            <p className={styles.contacts_info}>
+            <p className={css.contacts_info}>
               Wir werden Ihre Daten niemals mit jemand anderem teilen
             </p>
             <div>
               <textarea
-                className={styles.questionTextInput}
+                className={css.questionTextInput}
                 id="questionTextInput"
                 rows={8}
                 maxLength={maxLength}
@@ -117,11 +117,11 @@ export default function Contacts(): JSX.Element {
                 style={{ resize: "none" }}
                 required
               />
-              <p className={styles.contacts_info_charLeft}>
+              <p className={css.contacts_info_charLeft}>
                 Noch {charLeft} Zeichen verfügbar
               </p>
             </div>
-            <button id="liveToastBtn" type="submit" className="button_imker">
+            <button id="liveToastBtn" type="submit" className={css.requestButton}>
               Anfrage senden
             </button>
           </form>
