@@ -8,6 +8,7 @@ import { IoMdClose } from "react-icons/io";
 import Rating from "@mui/material/Rating";
 import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";
+import sendMessageToTelegram from "../../services/Notice/sendMessageToTelegram";
 
 const labels: { [index: string]: string } = {
   0: "Без оцінки",
@@ -39,6 +40,17 @@ const NewFeedback = ({ setModalHide }: IModal): JSX.Element => {
       rating: inputRating,
       timestamp: serverTimestamp(),
     });
+
+    const message =
+      "Новий коментар:" +
+      "\n\n  Iм'я: " +
+      inputName +
+      "\n  Рейтинг: " +
+      inputRating +
+      "\n\n  " +
+      inputReview;
+    sendMessageToTelegram(message);
+
     setInputName("");
     setInputReview("");
     setInputRating(0);

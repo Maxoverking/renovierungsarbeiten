@@ -3,6 +3,7 @@ import InputMask from "react-input-mask";
 import styles from "./ContactUs.module.css";
 import { initContacUsForm } from "./interfaces/IContactUsForm";
 import { Container, TextField } from "@mui/material";
+import sendMessageToTelegram from "../../services/Notice/sendMessageToTelegram";
 
 export default function Contacts(): JSX.Element {
   const [
@@ -23,36 +24,12 @@ export default function Contacts(): JSX.Element {
     }
   };
 
-  const BOT_TOKEN = import.meta.env.VITE_REACT_APP_BOT_TOKEN;
-  const CHAT_ID = import.meta.env.VITE_REACT_APP_CHAT_ID;
-
-  const sendMessageToTelegram = async (message: string) => {
-    try {
-      await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          chat_id: CHAT_ID,
-          text: message,
-        }),
-      });
-      console.log("Notification successfully sent to Telegram");
-    } catch (error) {
-      console.error(
-        "There was an error when sending a notification to Telegram:",
-        error
-      );
-    }
-  };
-
   const handleCreateRequest = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const message =
       "Новий запит на сайтi:" +
-      "\n  Iм'я: " +
+      "\n\n  Iм'я: " +
       firstName +
       "\n  Фамiлiя: " +
       lastName +
@@ -60,7 +37,7 @@ export default function Contacts(): JSX.Element {
       email +
       "\n  Телефон: " +
       phoneNumber +
-      "\n\n  Текст запиту: " +
+      "\n\n  " +
       questionText;
     sendMessageToTelegram(message);
 

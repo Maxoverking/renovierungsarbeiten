@@ -4,11 +4,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import FeedbackAdmin from "./Feedback/FeedbackAdmin";
-import PriceList from "./Price/PriceList";
-import VideoAdmin from "./VideoAdmin/VideoAdmin";
 
 import css from "./AdminPage.module.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -50,7 +48,7 @@ export default function AdminPage() {
   return (
     <>
       <div className="container">
-    <Link to="/" >Повернутись</Link>
+    {/* <Link to="/" >Повернутись</Link> */}
           <Box
             sx={{
               maxWidth: { xs: 320, sm: "100%" },
@@ -66,18 +64,10 @@ export default function AdminPage() {
               aria-label="scrollable auto tabs"
             >
               <Tab label="Відгуки" />
-              <Tab label="Прайс лист" />
-              <Tab label="Відео" />
             </Tabs>
           </Box>
         <CustomTabPanel value={value} index={0}>
           <FeedbackAdmin />
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
-          <PriceList />
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={2}>
-          <VideoAdmin />
         </CustomTabPanel>
       </div>
     </>
