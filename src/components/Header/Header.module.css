@@ -28,7 +28,7 @@
 .link{
   margin: 0.7vw;
   font-size: 2rem;
-  color: #0a4a6a;
+  color: var(--darkBlue);
 
   position: relative;
   text-decoration: none;
@@ -36,7 +36,7 @@
 }
 
 .link:hover{
-  color: #32aae2; 
+  color: var(--blue);
   font-size: 2rem;
   transform: scale(1.1);
 }

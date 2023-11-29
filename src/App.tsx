@@ -1,7 +1,5 @@
 import { FC, useEffect } from "react";
 import "./App.module.css";
-import Feedback from "./components/Feedback/Feedback";
-import Contacts from "./components/ContactUs/ContactUs";
 import AdminPage from "./components/Admin/AdminPage";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
@@ -21,8 +19,8 @@ const App: FC = () => {
     <div>
       <Routes>
         <Route index element={<Hero />} />
-        <Route path="Contacts" element={<Contacts />} />
-        <Route path="Feedback" element={<Feedback />} />
+        {/* <Route path="Contacts" element={<Contacts />} />
+        <Route path="Feedback" element={<Feedback />} /> */}
         <Route
           path={`${import.meta.env.VITE_REACT_APP_ROUTE}`}
           element={<AdminPage />}
