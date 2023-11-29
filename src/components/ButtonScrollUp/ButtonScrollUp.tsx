@@ -1,6 +1,7 @@
 import css from "./ButtonScrollUp.module.css";
 import { useState, useEffect, FC } from "react";
 import { BsArrowUpCircle } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ButtonScrollUp: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,9 +31,11 @@ const ButtonScrollUp: FC = () => {
 
   return (
     <div className={`${css.scroll_to_top} ${isVisible ? css.visible : ""}`}>
+      <Link to="/">
       <button onClick={scrollToTop}>
         <BsArrowUpCircle size={32} />
       </button>
+      </Link>
     </div>
   );
 };

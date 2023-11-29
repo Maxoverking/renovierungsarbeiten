@@ -6,7 +6,8 @@ import Box from "@mui/material/Box";
 import FeedbackAdmin from "./Feedback/FeedbackAdmin";
 
 import css from "./AdminPage.module.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import GalleryAdmin from "./GalleryAdmin/GalleryAdmin";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -48,7 +49,7 @@ export default function AdminPage() {
   return (
     <>
       <div className="container">
-    {/* <Link to="/" >Повернутись</Link> */}
+    <Link to="/" >Повернутись</Link>
           <Box
             sx={{
               maxWidth: { xs: 320, sm: "100%" },
@@ -64,10 +65,14 @@ export default function AdminPage() {
               aria-label="scrollable auto tabs"
             >
               <Tab label="Відгуки" />
+              <Tab label="Зображення" />
             </Tabs>
           </Box>
         <CustomTabPanel value={value} index={0}>
           <FeedbackAdmin />
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={1}>
+          <GalleryAdmin />
         </CustomTabPanel>
       </div>
     </>

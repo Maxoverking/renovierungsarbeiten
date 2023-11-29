@@ -8,14 +8,16 @@ export default function Header():JSX.Element {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (window.scrollY<800){
       setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    }
+      };
+      
+      window.addEventListener('scroll', handleScroll);
+      
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
   }, []);
 
   const headerHeight = Math.max(160 - scrollPosition * 0.1, 80);
@@ -31,6 +33,9 @@ export default function Header():JSX.Element {
           </li>
           <li className={css.link}>
             <Link to="#Feedback">Feedback</Link>
+          </li>
+          <li className={css.link}>
+            <Link to="#Gallery">Gallery</Link>
           </li>
         </ul>
       </nav>

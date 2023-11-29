@@ -1,0 +1,15 @@
+.gallery{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.imageContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.image{
+  margin: auto;
+  width: 60vw;
+}
