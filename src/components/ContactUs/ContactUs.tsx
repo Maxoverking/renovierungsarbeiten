@@ -46,7 +46,7 @@ export default function Contacts(): JSX.Element {
 
   return (
     <>
-      <div className={css.contacts_main}>
+      <div className={css.contacts_main} id="Contacts">
         <h4>Haben Sie eine Frage an uns?</h4>
         <Container>
           <h4>Rückmeldeformular:</h4>
