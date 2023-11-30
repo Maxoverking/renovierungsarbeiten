@@ -39,8 +39,8 @@ const Gallery: FC = () => {
 
   return (
     <>
-      <div className={css.gallery} id="Gallery">
-          <h2 className={css.feedbackHeaderText}>Gallery</h2>
+      <div className={css.gallery} id="projecte">
+          <h2 className={css.galleryHeaderText}>Beispielprojecte</h2>
           {gallery?.length > 0 && (
             <Swiper
               spaceBetween={30}
@@ -65,9 +65,8 @@ const Gallery: FC = () => {
                 >
                   <div className={css.imageContainer}>
                     <img className={css.image} src={el.item.link} alt="image" />
-                    <p className={css.reviewName}>
-                      {" "}
-                      <strong>{el.item.description}</strong>
+                    <p className={css.ImageDescription}>
+                      {el.item.description}
                     </p>
                   </div>
                 </SwiperSlide>

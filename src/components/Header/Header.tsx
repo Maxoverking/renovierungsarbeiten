@@ -40,14 +40,18 @@ export default function Header(): JSX.Element {
             <Link to="#uberUns">Über uns</Link>
           </li>
           <li className={css.link}>
+            <Link to="#leistungen">Leistungen</Link>
+          </li>          
+          <li className={css.link}>
+            <Link to="#projecte">Projecte</Link>
+          </li>
+          <li className={css.link}>
             <Link to="#Contacts">Contacts</Link>
           </li>
           <li className={css.link}>
             <Link to="#Feedback">Feedback</Link>
           </li>
-          <li className={css.link}>
-            <Link to="#Gallery">Gallery</Link>
-          </li>
+
         </ul>
       </nav>
     </div>

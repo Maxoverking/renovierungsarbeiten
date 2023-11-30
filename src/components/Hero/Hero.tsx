@@ -86,9 +86,9 @@ export default function Hero(): JSX.Element {
       </div>
 
       <Professionelle />
+      <Gallery />
       <Feedback />
       <Contacts />
-      <Gallery />
 
 
       <div className={css.footer}>

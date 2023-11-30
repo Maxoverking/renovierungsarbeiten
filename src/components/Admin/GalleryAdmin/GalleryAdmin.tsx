@@ -111,10 +111,10 @@ export default function GalleryAdmin(): JSX.Element {
                   onClick={() => {
                     updateDoc(doc(db, "gallery", el.id), {
                       description: editDescription,
-                      price: editLink,
-                      timestamp: serverTimestamp(),
+                      link: editLink,
                     });
                     setEditDescription("");
+                    setEditLink("");
                     setSelectedImage(null);
                   }}
                 >
