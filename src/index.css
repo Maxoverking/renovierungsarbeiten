@@ -101,8 +101,11 @@ img {
   box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.3);
 }
 
+#uberUns {
+  scroll-margin-top: 100px;
+}
 #Feedback {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
 }
 #Contacts {
   scroll-margin-top: 100px;

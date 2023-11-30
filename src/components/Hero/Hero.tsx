@@ -10,6 +10,8 @@ import { MdPhoneIphone } from "react-icons/md";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
+import { Link } from "react-router-dom";
+import Professionelle from "../Professionelle/Professionelle";
 
 export default function Hero(): JSX.Element {
   return (
@@ -23,29 +25,29 @@ export default function Hero(): JSX.Element {
         <div className={css.rightBlock}>
           <div className={css.rightBlock1}>
             <div className={css.address}>
-              <p className={css.addressText}>
+            <Link to="#Contacts" className={css.addressText}>
                 <FaLocationDot className={css.iconLocation} />
                 14480 Potsdam, Hans-Grade-Ring 36
-              </p>
+            </Link>
             </div>
 
             <div className={css.mailBlock}>
-              <MdAlternateEmail className={css.iconMail} />
               <a
                 href="mailto:rostyslav.felyshchuk@gmail.com"
                 className={css.mail}
               >
+              <MdAlternateEmail className={css.iconMail} />
                 rostyslav.felyshchuk@gmail.com
               </a>
             </div>
 
             <div className={css.phonesBlock}>
-              <MdPhoneIphone className={css.iconPhone} />
               <a href="tel:01775729872" className={css.phone}>
+              <MdPhoneIphone className={css.iconPhone} />
                 01775729872
               </a>
-              <MdPhoneIphone className={css.iconPhone} />
               <a href="tel:01631288635" className={css.phone}>
+              <MdPhoneIphone className={css.iconPhone} />
                 01631288635
               </a>
             </div>
@@ -53,38 +55,42 @@ export default function Hero(): JSX.Element {
 
           <div className={css.rightBlock2}>
             <div className={css.address}>
-              <p className={css.addressText}>
+            <Link to="#Contacts" className={css.addressText}>
                 <FaLocationDot className={css.iconLocation} />
                 14480 Potsdam, Hans-Grade-Ring 36
-              </p>
+            </Link>
             </div>
 
             <div className={css.mailBlock}>
-              <MdAlternateEmail className={css.iconMail} />
               <a
                 href="mailto:rostyslav.felyshchuk@gmail.com"
                 className={css.mail}
               >
+              <MdAlternateEmail className={css.iconMail} />
                 rostyslav.felyshchuk@gmail.com
               </a>
             </div>
 
             <div className={css.phonesBlock}>
-              <MdPhoneIphone className={css.iconPhone} />
               <a href="tel:01775729872" className={css.phone}>
+              <MdPhoneIphone className={css.iconPhone} />
                 01775729872
               </a>
-              <MdPhoneIphone className={css.iconPhone} />
               <a href="tel:01631288635" className={css.phone}>
+              <MdPhoneIphone className={css.iconPhone} />
                 01631288635
               </a>
             </div>
           </div>
         </div>
       </div>
+
+      <Professionelle />
       <Feedback />
       <Contacts />
       <Gallery />
+
+
       <div className={css.footer}>
         <div className={css.footerContainer}>
           <div className={css.footerLeft}>

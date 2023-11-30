@@ -37,6 +37,9 @@ export default function Header(): JSX.Element {
       <nav>
         <ul className={css.navigate}>
           <li className={css.link}>
+            <Link to="#uberUns">Über uns</Link>
+          </li>
+          <li className={css.link}>
             <Link to="#Contacts">Contacts</Link>
           </li>
           <li className={css.link}>
