@@ -40,7 +40,7 @@ const Gallery: FC = () => {
   return (
     <>
       <div className={css.gallery} id="projecte">
-          <h2 className={css.galleryHeaderText}>Beispielprojecte</h2>
+          <h2 className={css.galleryHeaderText}>BEISPIELPROJECTE</h2>
           {gallery?.length > 0 && (
             <Swiper
               spaceBetween={30}

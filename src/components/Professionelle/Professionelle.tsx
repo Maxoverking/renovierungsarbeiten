@@ -5,6 +5,7 @@ import abrissarbeiten from "/Abrissarbeiten.png";
 import fliesenverlegung from "/Fliesenverlegung.png";
 import { FaCheck } from "react-icons/fa6";
 import Statistics from "../Statistics/Statistics";
+import { GoDotFill } from "react-icons/go";
 
 export default function Professionelle() {
   return (
@@ -31,6 +32,48 @@ export default function Professionelle() {
 
         <div className={css.Leistungen} id="leistungen">
           <h2 className={css.title}> UNSERE LEISTUNGEN</h2>
+
+
+          <div className={css.leistungenContainer}>
+          <div className={css.leistungenLeft}>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Trockenbau
+            </p>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Malerarbeiten
+            </p>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Abrissarbeiten
+            </p>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Maurer / Putzarbeiten
+            </p>
+          </div>
+
+          <div className={css.leistungenRight}>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Fliesenverlegung
+            </p>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Altbausanierung
+            </p>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Fußboden-Sanierung
+            </p>
+            <p className={css.leistungenText}>
+              <GoDotFill className={css.iconDot} />
+              Bodenlegearbeiten
+            </p>
+          </div>
+        </div>
+
 
           <div className={css.gipsCard}>
             <div className={css.gipsTop}>

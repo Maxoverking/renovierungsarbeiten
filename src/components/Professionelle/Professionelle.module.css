@@ -40,10 +40,29 @@
   margin-top: 6vw;  
 }
 
+.leistungenContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 80%;
+  margin: 2vw auto;
+}
+.leistungenText{
+  color: var(--darkBlue);
+  font-size: 1.8vw;
+  margin: 1.8vw;
+}
+.iconDot{
+  font-size: 1vw;
+  color: var(--darkBlue);
+  margin-right: 1vw;
+}
+
 .gipsCard{
   width: 60%;
   border: 1px solid var(--darkBlue);
   border-radius: 20px;
+  background-color: var(--white);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 3vw;
 }
@@ -72,6 +91,7 @@
   width: 80%;
   border: 1px solid var(--darkBlue);
   border-radius: 20px;
+  background-color: var(--white);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 3vw;
 }
@@ -100,6 +120,7 @@
   width: 65%;
   border: 1px solid var(--darkBlue);
   border-radius: 20px;
+  background-color: var(--white);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 3vw;
 }
@@ -127,6 +148,7 @@
   width: 85%;
   border: 1px solid var(--darkBlue);
   border-radius: 20px;
+  background-color: var(--white);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 3vw;
 }
