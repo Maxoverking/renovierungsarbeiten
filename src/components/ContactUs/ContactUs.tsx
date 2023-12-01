@@ -121,12 +121,23 @@ export default function Contacts(): JSX.Element {
                 Noch {charLeft} Zeichen verfügbar
               </p>
             </div>
-            <button id="liveToastBtn" type="submit" className={css.requestButton}>
+            <button
+              id="liveToastBtn"
+              type="submit"
+              className={css.requestButton}
+            >
               Anfrage senden
             </button>
           </form>
         </Container>
       </div>
+
+      <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9742.133216615364!2d13.116959698364251!3d52.37888189724196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85f15177ae319%3A0xc00070f77ab1cd24!2sHans-Grade-Ring%2036%2C%2014480%20Potsdam!5e0!3m2!1sru!2sde"
+  className={css.map}
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
     </>
   );
 }

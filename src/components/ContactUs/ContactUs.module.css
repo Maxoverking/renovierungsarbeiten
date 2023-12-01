@@ -66,3 +66,16 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--black);
   box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
 }
+
+.map{
+  width: 100%;
+  height: 30vh;
+  margin: 0 0 -1vh;
+  border: none;
+  filter: grayscale(100%);
+  transition: filter 0.5s; 
+}
+.map:hover{
+  filter: grayscale(10%); 
+
+}

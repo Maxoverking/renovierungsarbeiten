@@ -40,40 +40,43 @@ const Gallery: FC = () => {
   return (
     <>
       <div className={css.gallery} id="projecte">
-          <h2 className={css.galleryHeaderText}>BEISPIELPROJECTE</h2>
-          {gallery?.length > 0 && (
-            <Swiper
-              spaceBetween={30}
-              effect={"slide"}
-              navigation={true}
-              autoplay={{
-                delay: 7000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: false,
-              }}
-              modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
-              style={{
-                width: "90%",
-                height: "auto",
-              }}
-              className="mySwiper"
-            >
-              {gallery.map((el) => (
-                <SwiperSlide
-                  key={el.id}
-                  style={{ opacity: 1, pointerEvents: "none" }}
-                >
-                  <div className={css.imageContainer}>
-                    <img className={css.image} src={el.item.link} alt="image" />
-                    <p className={css.ImageDescription}>
-                      {el.item.description}
-                    </p>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
-        </div>
+        <h2 className={css.galleryHeaderText}>BEISPIELPROJECTE</h2>
+        {gallery?.length > 0 && (
+          <Swiper
+            spaceBetween={30}
+            effect={"slide"}
+            navigation={true}
+            grabCursor={true}
+            loop={true}
+            autoplay={{
+              delay: 7000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
+            pagination={{
+              // type: 'fraction',
+              dynamicBullets: true,
+              clickable: true,
+            }}
+            modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
+            style={{
+              width: "90%",
+              height: "auto",
+            }}
+            className="mySwiper"
+          >
+            {gallery.map((el) => (
+              <SwiperSlide key={el.item.id} style={{ opacity: 1 }}>
+                <div className={css.imageContainer}>
+                  <img className={css.image} src={el.item.link} alt="image" />
+                  <p className={css.ImageDescription}>{el.item.description}</p>
+                  <br />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
+      </div>
     </>
   );
 };
