@@ -1,5 +1,4 @@
 import Contacts from "../ContactUs/ContactUs";
-import Feedback from "../Feedback/Feedback";
 import Gallery from "../Gallery/Gallery";
 import Header from "../Header/Header";
 import logo2 from "/logo2.png";
@@ -87,7 +86,6 @@ export default function Hero(): JSX.Element {
 
       <Professionelle />
       <Gallery />
-      <Feedback />
       <Contacts />
 
 

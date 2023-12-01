@@ -54,14 +54,15 @@ const Feedback: FC = () => {
             src={feedbackImg}
             alt="feedback"
           />
-          <h2 className={css.feedbackHeaderText}>Відгуки</h2>
+          <h2 className={css.feedbackHeaderText}>Kundenbewertungen</h2>
           {reviews?.length > 0 && (
             <Swiper
               spaceBetween={30}
               effect={"slide"}
+              loop={true}
               navigation={true}
               autoplay={{
-                delay: 7000,
+                delay: 4000,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
               }}
@@ -91,7 +92,7 @@ const Feedback: FC = () => {
             </Swiper>
           )}
           <button className={css.reviewButton} onClick={() => modalShow()}>
-            Залишити відгук{" "}
+            Bewertung schreiben
           </button>
           {isModalShow && <Modal setModalHide={setIsModalShow} />}
         </div>

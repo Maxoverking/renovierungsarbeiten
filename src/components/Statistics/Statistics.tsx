@@ -6,7 +6,7 @@ import AnimatedCounter from "./AnimatedCounter";
 const Statistics: FC = () => {
   const one = 8;
   const two = 12;
-  const tree = 65;
+  const tree = 42;
 
   return (
     <div className={css.statistic}>
@@ -14,22 +14,13 @@ const Statistics: FC = () => {
       <div className={css.card}>
         <div className={css.cardTop}>
           <p className={css.card_number}>
-            <CountUpAnimation endValue={tree} />
+            <CountUpAnimation endValue={tree} />+
           </p>
-          <p className={css.card_title}>Abgeschlossene Projekte </p>
+          <p className={css.card_title}> Abgeschlossene Projekte </p>
         </div>
         <AnimatedCounter value={tree} />
       </div>
 
-      <div className={css.card}>
-        <div className={css.cardTop}>
-          <p className={css.card_number}>
-            <CountUpAnimation endValue={one} />
-          </p>
-          <span className={css.card_title}> Jahre Erfahrung</span>
-        </div>
-        <AnimatedCounter value={one} />
-      </div>
 
       <div className={css.card}>
         <div className={css.cardTop}>
@@ -39,6 +30,16 @@ const Statistics: FC = () => {
           <p className={css.card_title}>Mitarbeiter</p>
         </div>
         <AnimatedCounter value={two} />
+      </div>
+      
+      <div className={css.card}>
+        <div className={css.cardTop}>
+          <p className={css.card_number}>
+            <CountUpAnimation endValue={one} />
+          </p>
+          <span className={css.card_title}> Jahre Erfahrung</span>
+        </div>
+        <AnimatedCounter value={one} />
       </div>
     </div>
   );

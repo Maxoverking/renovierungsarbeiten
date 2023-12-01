@@ -30,6 +30,7 @@
 
 .inputName {
   width: 70%;
+  font-size: 16px;
 }
 .rating_title {
   text-align: center;
@@ -63,8 +64,8 @@
 }
 
 .reviewButton:hover {
-  background-color: rgb(13, 171, 171);
-  color: var(--black);
+  background-color: var(--darkBlue);
+  color: var(--white);
   box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
 }
 

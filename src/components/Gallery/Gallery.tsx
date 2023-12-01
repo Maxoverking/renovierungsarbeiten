@@ -66,7 +66,7 @@ const Gallery: FC = () => {
             className="mySwiper"
           >
             {gallery.map((el) => (
-              <SwiperSlide key={el.item.id} style={{ opacity: 1 }}>
+              <SwiperSlide key={el.id} style={{ opacity: 1 }}>
                 <div className={css.imageContainer}>
                   <img className={css.image} src={el.item.link} alt="image" />
                   <p className={css.ImageDescription}>{el.item.description}</p>

@@ -54,7 +54,6 @@ export default function GalleryAdmin(): JSX.Element {
           className={css.descriptionInput}
           type="text"
           value={description}
-          required
           placeholder="Назва зображення"
           onChange={(e) => setDescription(e.target.value)}
         />{" "}

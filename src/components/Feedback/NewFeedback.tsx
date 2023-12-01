@@ -11,12 +11,12 @@ import StarIcon from "@mui/icons-material/Star";
 import sendMessageToTelegram from "../../services/Notice/sendMessageToTelegram";
 
 const labels: { [index: string]: string } = {
-  0: "Без оцінки",
-  1: "Дуже погано",
-  2: "Погано",
-  3: "Середньо",
-  4: "Добре",
-  5: "Відмінно!",
+  0: "nicht ausgewählt",
+  1: "Sehr schlecht",
+  2: "Schlecht",
+  3: "Mittel",
+  4: "Gut",
+  5: "Ausgezeichnet!",
 };
 
 function getLabelText(value: number) {
@@ -73,12 +73,12 @@ const NewFeedback = ({ setModalHide }: IModal): JSX.Element => {
           id="reviewName"
           value={inputName}
           maxRows={1}
-          label="Ваше Ім'я"
+          label="Ihr Name"
           variant="standard"
           onChange={(e) => setInputName(e.target.value)}
         />
 
-        <p className={css.rating_title}>Оцініть нашу співпрацю</p>
+        <p className={css.rating_title}>Bewerten Sie unsere Zusammenarbeit</p>
         <div className={css.inputRating}>
           <Rating
             name="hover-feedback"
@@ -96,7 +96,7 @@ const NewFeedback = ({ setModalHide }: IModal): JSX.Element => {
             }
           />
           {inputRating !== null && (
-            <Box sx={{ ml: 2 }}>
+            <Box>
               {labels[hover !== -1 ? hover : inputRating]}
             </Box>
           )}
@@ -105,14 +105,14 @@ const NewFeedback = ({ setModalHide }: IModal): JSX.Element => {
         <textarea
           className={css.inputReview}
           required
-          placeholder="Залиште Ваш відгук"
+          placeholder="Hinterlassen Sie Ihre Bewertung"
           maxLength={300}
           rows={4}
           onChange={(e) => setInputReview(e.target.value)}
           value={inputReview}
         />
         <button className={css.reviewButton} type="submit">
-          Відправити
+          Bewertung abschicken
         </button>
       </form>
     </div>
