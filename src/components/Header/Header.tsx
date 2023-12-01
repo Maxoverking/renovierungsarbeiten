@@ -10,7 +10,7 @@ export default function Header(): JSX.Element {
     const handleScroll = () => {
       if (window.scrollY < 800) {
         setScrollPosition(window.scrollY);
-      }
+      } else {setScrollPosition(900)}
     };
 
     window.addEventListener("scroll", handleScroll);
