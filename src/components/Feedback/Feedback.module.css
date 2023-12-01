@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
 .feedback_background {
-  padding: 1.5rem 0rem;
-  margin: 3rem 0rem;
+  margin: 3vw 0rem;
 }
 .feedbackHeader {
   width: 90%;
@@ -11,12 +10,12 @@
 }
 
 .feedbackHeaderImg {
-  width: 4rem;
+  width: 4vw;
 }
 
 .feedbackHeaderText {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
 }
 
 .reviewsContainer {
@@ -46,22 +45,21 @@
 .reviewBody {
   width: 85%;
   margin: 1vw auto 3vw;
-  border-radius: 30px;
-  font-size: 1.5rem;
+  font-size: 1.4vw;
   font-family: "Cormorant-Regular";
-  text-indent: 1rem;
+  text-indent: 1vw;
   text-align: justify;
   word-wrap: break-word;
 }
 
 .reviewButton {
-  padding: 0.6rem 1.4rem;
+  padding: 0.6vw 1.4vw;
   background-color: var(--blue);
-  margin-top: 1rem;
+  margin-top: 1vw;
   color: var(--white);
-  border-radius: 1.4rem;
+  border-radius: 30px;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
-  font-size: 1.3rem;
+  font-size: 1.1vw;
   box-shadow: 1px 1px 4px rgba(223, 127, 127, 0.3);
 }
 

@@ -21,6 +21,7 @@ import {
   EffectCoverflow,
   Navigation,
   Pagination,
+  Zoom,
 } from "swiper/modules";
 
 const Gallery: FC = () => {
@@ -47,6 +48,7 @@ const Gallery: FC = () => {
             effect={"slide"}
             navigation={true}
             grabCursor={true}
+            zoom={true}
             loop={true}
             autoplay={{
               delay: 7000,
@@ -58,7 +60,7 @@ const Gallery: FC = () => {
               dynamicBullets: true,
               clickable: true,
             }}
-            modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
+            modules={[EffectCoverflow, Navigation, Pagination, Zoom, Autoplay]}
             style={{
               width: "90%",
               height: "auto",
@@ -68,7 +70,9 @@ const Gallery: FC = () => {
             {gallery.map((el) => (
               <SwiperSlide key={el.id} style={{ opacity: 1 }}>
                 <div className={css.imageContainer}>
-                  <img className={css.image} src={el.item.link} alt="image" />
+                  <div className="swiper-zoom-container">
+                    <img className={css.image} src={el.item.link} alt="image" />
+                  </div>
                   <p className={css.ImageDescription}>{el.item.description}</p>
                   <br />
                 </div>
