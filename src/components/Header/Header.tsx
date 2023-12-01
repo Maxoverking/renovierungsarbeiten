@@ -20,16 +20,16 @@ export default function Header(): JSX.Element {
     };
   }, []);
 
-  const headerHeight = Math.max(160 - scrollPosition * 0.3, 80);
+  const headerHeight = Math.max(16 - (scrollPosition/50), 8);
 
   return (
     <div
       className={css.headerContainer}
-      style={{ height: `${headerHeight}px` }}
+      style={{ height: `${headerHeight}vh` }}
     >
       <img
         className={css.logo}
-        style={{ height: `${headerHeight - 20}px` }}
+        style={{ height: `${headerHeight-1}vh` }}
         src={logo}
         alt="logo"
       />
