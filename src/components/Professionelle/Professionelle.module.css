@@ -26,8 +26,8 @@
 
 .punktText{
   color: var(--darkBlue);
-  font-size: 1.8vw;
-  margin: 1.8vw;
+  font-size: 1.7vw;
+  margin: 1.8vw 0.8vw;
 }
 .check{
   color: var(--stastistics);

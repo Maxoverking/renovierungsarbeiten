@@ -26,6 +26,7 @@ import {
   Pagination,
 } from "swiper/modules";
 import Modal from "../Modal/Modal";
+import { calculateRecapchaScale } from "../../services/scaleService";
 
 const Feedback: FC = () => {
   const [isModalShow, setIsModalShow] = useState(false);
@@ -84,7 +85,11 @@ const Feedback: FC = () => {
                       <strong>{el.item.name}</strong>
                     </p>
 
-                    <Rating name="read-only" value={el.item.rating} readOnly />
+                    <Rating name="ratingR" value={el.item.rating} readOnly 
+                    style={{
+                      transform: `scale(${calculateRecapchaScale()})`,
+                    }}
+                    />
                     <div className={css.reviewBody}>{el.item.review}</div>
                   </div>
                 </SwiperSlide>

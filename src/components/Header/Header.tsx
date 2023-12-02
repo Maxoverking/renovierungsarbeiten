@@ -43,7 +43,7 @@ export default function Header(): JSX.Element {
             <Link to="#leistungen">Leistungen</Link>
           </li>          
           <li className={css.link}>
-            <Link to="#projecte">Projecte</Link>
+            <Link to="#projecte">Projekte</Link>
           </li>
           <li className={css.link}>
             <Link to="#Contacts">Kontakt</Link>
