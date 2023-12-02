@@ -56,9 +56,9 @@ export default function Contacts(): JSX.Element {
   return (
     <>
       <div className={css.contactsMain} id="Contacts">
-        <h2 className={css.title}>KONTAKT</h2>
         <div className={css.contactsContainer}>
           <div className={css.leftBlock}>
+        <h2 className={css.title}>KONTAKT</h2>
 
             <div className={css.nameBlock}>
               <p className={css.nameText}>Rostyslav Felyshchuk</p>

@@ -40,6 +40,7 @@
   font-size: 2vw;
   color: var(--blue);
   text-decoration: underline;
+  margin-bottom: 2vw;
 }
 
 .leftBlock{
@@ -54,8 +55,9 @@
   margin-bottom: 2vw;
 }
 .nameText {
+  text-align: center;
   font-size: 3.5vw;
-  margin: 1vw;
+  margin-bottom: 1vw;
 }
 
 .spanText{
