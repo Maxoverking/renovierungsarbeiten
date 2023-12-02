@@ -35,13 +35,6 @@
   justify-content: space-between;
 }
 
-.title{
-  text-align: center;
-  font-size: 2vw;
-  color: var(--blue);
-  text-decoration: underline;
-  margin-bottom: 2vw;
-}
 
 .leftBlock{
   width: 50%;
@@ -49,6 +42,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: var(--darkBlue);
+}
+
+.title{
+  text-align: center;
+  font-size: 2vw;
+  color: var(--main-text-color);
+  text-decoration: underline;
+  margin-bottom: 3vw;
 }
 
 .nameBlock{
@@ -75,9 +77,8 @@
   font-size: 1.8vw;
 }
 .mail:hover {
-  font-size: 1.8vw;
   color: var(--darkBlue);
-  text-shadow: 4px 4px 4px rgba(255, 255, 255, 1);
+  text-shadow: 2px 2px 2px rgba(121, 121, 121, 0.5);
 }
 
 .phonesBlock {
@@ -89,7 +90,7 @@
 }
 .phone:hover {
   color: var(--darkBlue);
-  text-shadow: 4px 4px 4px rgba(255, 255, 255, 1);
+  text-shadow: 2px 2px 2px rgba(121, 121, 121, 0.5);
 }
 
 .iconLocation {
